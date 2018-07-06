@@ -1,0 +1,26 @@
+my:
+  name: forezp
+  age: 12
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,i'm  ${my.name}
+
+spring:
+  profiles:
+    active: dev
+
+file:
+  filename: upload-dir
+
+#spring:
+#  rabbitmq:
+#    host: ${rabbitmq.host}
+#    port: ${rabbitmq.port}
+#    username: ${rabbitmq.i5x.username}
+#    password: ${rabbitmq.i5x.password}
+#    virtual-host: ${rabbitmq.i5x.vhost}
+
+service:
+    message: Hello World111
